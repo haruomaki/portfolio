@@ -8,35 +8,49 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 
+<header>
+    <h1>@haruomaki's works</h1>
+</header>
+
 <body>
     <div class="content">
-
-        <h1>@haruomaki の自己紹介</h1>
-        <p>This is a simple portfolio page.</p>
-
+        <h2>Websites</h2>
         <ul>
-            <li>`luagui` ゲーム</li>
-            <li>`monapa` パーサコンビネータライブラリ</li>
+            <li>GitHub: <a href="https://github.com/haruomaki">https://github.com/haruomaki</a></li>
+            <li>Codeberd: <a href="https://codeberg.org/haruomaki">https://codeberg.org/haruomaki</a></li>
+            <li>Qiita: <a href="https://qiita.com/haruomaki">https://qiita.com/haruomaki</a></li>
+            <li>X (Twitter): <a href="https://x.com/ramenharumaki">https://x.com/ramenharumaki</a></li>
         </ul>
 
         <h2>作品紹介</h2>
 
         <h3>luagui</h3>
 
-        Lua言語で書けるグラフィカルエンジンです。
+        リポジトリ：<a href="https://github.com/haruomaki/luagui">https://github.com/haruomaki/luagui</a>
 
-        <!-- <pre><code>
-        local l = 98
-    </code></pre> -->
+        <p>Lua言語で書ける、OpenGLベースの自作ゲームエンジンです。</p>
+        <p>C++で実装しており、今のところメッシュの頂点座標を直接指定しての表示・コルーチン機構・テクスチャ・効果音などの機能があります。</p>
+        <p>今後の目標はレンダリングパイプライン（シェーダ）の整備と3Dモデルファイルの読み込みです。</p>
+
 
         <h3>monapa</h3>
 
-        パーサコンビネータ
+        リポジトリ：<a href="https://codeberg.org/haruomaki/monapa">https://codeberg.org/haruomaki/monapa</a>
+
+        <p>Rust言語用のパーサコンビネータライブラリ。</p>
+        <p>マクロを活用し、文脈自由文法(またはPEG)の生成規則をそのまま書き下すことができます。</p>
+        <p>こちらに詳しい紹介記事を書いています。<a
+                href="https://qiita.com/haruomaki/items/9da7ca35c10c383090f1">Rustでモナドをつくったよ【パーサコンビネータ】</a></p>
+
 
 
         <h3>ghast</h3>
 
-        ghastラムダ計算自作言語。構文解析のためにmonapaを作りました。
+        リポジトリ：<a href="https://codeberg.org/haruomaki/ghast">https://codeberg.org/haruomaki/ghast</a>
+
+        <p>非常に簡易的な自作プログラミング言語。</p>
+        <p>まだ組み込み関数として足し算とコンソール出力、ラムダ式の定義および関数適用しか実装できていませんが、これらを組み合わせてLispのように複雑なプログラムが作れるようになっています。</p>
+        <p>これの構文解析のためにmonapaを作りました。</p>
 
     </div>
 

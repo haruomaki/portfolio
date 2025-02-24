@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    margin: 20px;
+    /* margin: 20px; */
 }
 
 pre {
@@ -12,6 +12,13 @@ pre {
 
 code {
     font-family: 'Courier New', Courier, monospace;
+}
+
+header {
+    /* position: relative;
+    height: 50vh; */
+    /* background: url(../img/background.png) center / cover;
+    filter: blur(2px); */
 }
 
 h1 {
@@ -32,6 +39,17 @@ h2 {
     border-left: 4px solid #000;
 }
 
+h3 {
+    background: #b0dcfa;
+    /*背景色*/
+    padding: 0.5em;
+    /*文字周りの余白*/
+    color: white;
+    /*文字を白に*/
+    border-radius: 0.5em;
+    /*角の丸み*/
+}
+
 body {
     position: relative;
     z-index: 1;
@@ -44,13 +62,12 @@ body:after {
     width: 100%;
     height: 100%;
     content: "";
-    background: #f89174;
-    background: -moz-linear-gradient(top, #FFC778 0%, #f89174 100%);
-    background: -webkit-linear-gradient(top, #FFC778 0%, #f89174 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fbcacb', endColorstr='#f79697', GradientType=0);
-    background: linear-gradient(to bottom, #FFC778 0%, #f89174 100%);
+    background: #7f65f1;
+    background: -moz-linear-gradient(top, #adcbff 0%, #7f65f1 100%);
+    background: -webkit-linear-gradient(top, #adcbff 0%, #7f65f1 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#adcbff', endColorstr='#7f65f1', GradientType=0);
+    background: linear-gradient(to bottom, #adcbff 0%, #7f65f1 100%);
     z-index: -1;
-    /* Ensure the pseudo-element is behind the main content */
 }
 
 .content {
@@ -60,4 +77,30 @@ body:after {
     background-color: white;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* min-height: 100vh; */
+}
+
+ul {
+    border: solid 2px skyblue;
+    border-radius: 5px;
+    padding: 0.5em 1em 0.5em 2.3em;
+    position: relative;
+}
+
+ul li {
+    line-height: 1.5;
+    padding: 0.5em 0;
+    list-style-type: none !important;
+}
+
+ul li:before {
+
+    font-family: "Font Awesome 5 Free";
+    content: "・";
+    /*アイコンの種類*/
+    position: absolute;
+    left: 1em;
+    /*左端からのアイコンまでの距離*/
+    color: skyblue;
+    /*アイコン色*/
 }
